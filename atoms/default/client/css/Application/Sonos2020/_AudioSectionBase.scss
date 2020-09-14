@@ -1,0 +1,50 @@
+section{
+   
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    overflow: hidden;
+
+    // Audio Player
+    @import "./AudioPlayer";
+    // Audio Copy
+  
+ 
+    // Section Styles
+    
+}
+    @import "./Audio_Section_Styles";    
+    @import "./AudioCopy";
+    @import "./AudioQuotes";
+   
+    
+
+    .AudioBGImage{
+
+           // border:1px solid red;
+            z-index: 5;
+            position: absolute;
+            top:0;
+            left: 0;
+            width: 100vw;
+            height: 100%;
+
+            .BgImage{
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100vw;
+                height: 100%;
+                background-position: 0 0;
+                background-repeat: no-repeat;
+                background-size: cover;
+                opacity: 0;
+            }
+    
+            @media only screen  and (max-width: 768px) {
+                .BgImage{
+                    background-position: center;
+                }
+             }
+
+    }

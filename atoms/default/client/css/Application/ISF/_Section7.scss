@@ -1,0 +1,25 @@
+.Section7{
+    padding: 10rem 0;
+    border-bottom: 5px solid black;
+
+
+    .Boxes{
+        border:1px solid red;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        align-content: center;
+        justify-content: center;
+
+        .Box{
+            border:1px solid green;
+            padding: 3rem;
+            h1{
+                display: flex;
+                margin: 0 0 1rem;
+                font-size: 3rem;
+            }
+        }
+    }
+    
+  }

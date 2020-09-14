@@ -1,0 +1,21 @@
+.Section5{
+    padding: 5rem 0 ;
+    border-bottom: 5px solid black;
+    .Boxes{
+        border:1px solid red;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        align-content: center;
+        justify-content: center;
+
+        .Box{
+            border:1px solid green;
+            padding: 3rem;
+            p{
+                padding: 1rem;
+            }
+        }
+    }
+   
+  }

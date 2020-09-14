@@ -1,0 +1,57 @@
+.AudioCopy{
+    min-height: auto;
+    background-color: black;
+    color: white;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+
+    .AudioCopyContainer{
+        @include BreakPoints;
+        display: flex;
+        flex-direction: row;
+        padding: 4rem 15rem;
+       
+        .Avatar{
+            //background-color: red;
+            width: 150px;
+            height: 150px;
+            border-radius: 100%;
+            margin:  0 20px;
+        }
+    
+        .Copy{
+            width: 60%;
+            p{font-family: $FontFamilyHeader;}
+        }
+    
+    
+    
+       
+    }
+
+    @media only screen and (min-width: 768px)  and (max-width: 1024px) {
+        .AudioCopyContainer{
+            padding: 2rem 8rem;
+        }
+    }
+
+    @media only screen and (min-width: 568px)  and (max-width: 768px) {
+        .AudioCopyContainer{
+            padding: 2rem 4rem;
+        }
+    }
+
+    @media only screen and (max-width: 568px) {
+        .AudioCopyContainer{
+            padding: 2rem 1rem;
+            flex-direction: column;
+            align-items: center;
+            .Copy{
+                margin: 2rem 0 ;
+                width: 100%;
+            }
+        }
+    }
+}

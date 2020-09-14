@@ -1,0 +1,23 @@
+// Base Colors
+$PrimaryColor:#FCD5C2;
+$SecondaryColor:#21333A; 
+$TertiaryColor:#69D1CA; 
+$Quaternary:#fefdf8; 
+
+
+
+// Type Colors
+$PrimaryHColor:$SecondaryColor;
+$SecondaryHColor:$Quaternary;
+$TertiaryHColor:$PrimaryColor; 
+
+$PrimaryPColor:$SecondaryColor;
+$SecondaryPColor:$Quaternary;
+$TertiaryPColor:$PrimaryColor; 
+
+
+@import "./Container";
+@import "./Header";
+@import "./BodyCopy";
+@import "./ApplicationFooter";
+@import "./TemplateFooter";

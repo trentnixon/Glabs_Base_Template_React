@@ -1,0 +1,46 @@
+.ApplicationFooter{
+    //background-color: #232328;
+    //color: #fff;
+
+    background-color:#fff;
+    color: #232328;
+
+    .Tail{
+        border-top: 1px solid #D8D8D8;
+        padding: 2rem 0rem 3rem;
+              
+        hr{ margin: .2rem 0 ;}
+        p{
+            font-family: "TS3 Text Sans";
+            color: #232328;
+            width: 100%;
+            font-weight: 800;
+            font-style: italic;
+            padding: 0 1rem;
+
+            a{
+                color: #232328;
+                font-weight: 800;
+                text-decoration: underline;
+            }
+        }
+    }
+
+    @media only screen and (min-width: 768px) and (max-width: 1024px) {
+       
+        .Tail{ p{ width: 80%; } }
+       
+    }
+
+    @media only screen and (min-width: 600px) and (max-width: 768px) {
+       
+        .Tail{ p{ width: 80%; } }
+       
+    }
+
+    @media only screen and (max-width: 600px) {
+      
+        .Tail{ p{ width: 100%; } }
+       
+    }
+}

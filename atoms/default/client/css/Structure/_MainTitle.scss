@@ -1,0 +1,110 @@
+#MainTitle{
+    
+    @include FlexBoxBasic( $direction:column ,$justify:flex-start, $items:flex-start, $content:flex-start );
+    @include BreakPoints;
+
+    .TitleTab{
+      overflow: hidden;
+      width: 50%;
+      
+      .InnerTitleTab{
+          
+      background-color: $Color5;
+      padding: 1.2em;
+
+          h1{
+            font-size: 1rem;
+            margin: 0;
+            line-height: 0;
+          }
+      }
+    }
+
+    .SponserTab{
+      width: 10%;
+      align-self: flex-end;
+      position: absolute;
+  
+      overflow: hidden;
+      height: 100px;
+      
+        .SponserTabInner{
+          opacity: 1;
+          padding-top: .5em;
+
+            .ClientDetails{
+              @include FlexBoxBasic( $direction:column ,$justify:center, $items:center, $content:center);
+              span{
+                font-size: .8rem;
+              }
+              img{
+                width: 80px;
+              }
+            }
+        }
+
+      
+    }
+
+#TitleContainer{
+  @include BreakPoints;
+ 
+  display: flex;
+  flex-direction: column;
+
+  .Tab{
+    display: none;
+    background-color: white;
+    width: 60%;
+    padding: .3rem 0 .3rem 1rem;
+    color: black;
+
+    h1{
+      font-size: 20px;
+      font-family:$FontFamilyBody;
+    }
+
+  }
+
+    .Title-Container{
+            margin: 15rem 20rem;
+            width: auto;
+            color: white;
+        h1{ 
+            margin: 0 0 10px 0;
+            font-weight: 800;
+            color: $Color1;
+            font-size: 45px;
+            line-height: 42px;   
+        }
+        h2{
+            font-size: 30px;
+            line-height: 35px;
+            font-weight: 500;
+            font-weight: 600;
+        }
+
+    }
+
+
+    @media only screen  and (min-width : 1200px) {}
+
+    @media only screen  and (min-width : 1024px) and (max-width : 1200px) {
+      .Title-Container{  margin: 10rem 20rem;}
+    }
+    @media only screen  and (min-width : 768px) and (max-width : 1024px) {
+      .Title-Container{  margin: 10rem 12rem;}
+    }
+
+    @media only screen and (min-width: 568px)  and (max-width: 768px) {
+      .Title-Container{ margin: 15rem 5rem; }
+    }
+
+    @media only screen  and (max-width : 568px) {
+        .Title-Container{
+          margin: 10rem 1rem;
+          @each $name, $size in $Title-Small{  #{$name} :$size; }
+        }
+    }
+  }
+}

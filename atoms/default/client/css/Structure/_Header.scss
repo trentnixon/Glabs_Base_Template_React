@@ -1,0 +1,49 @@
+#Header{
+
+    position: relative;
+    margin: 0;
+    padding: 0;
+    height:$HeaderHeight;
+
+    .PaidforBy {
+     position: absolute;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: flex-end;
+    width: 100%;
+    padding: 1rem 0rem 0 0;
+    font-family: "TS3 Text Sans";
+    font-size: .7rem;
+    color: #434346;
+    img{ 
+          width: 90px;
+          margin: 0 1rem 0 .3rem;}
+      }
+
+
+   // @import "./BackgroundImageContainer";
+
+   .FlexHeader{
+        height:$HeaderHeight;
+        position: relative;
+        @include FlexBoxBasic( $direction:column-reverse ,$justify:space-between);
+        //TopBanner
+       //  @import "./Sponsor_Top";
+
+ 
+        // Main Titles
+        @import "./MainTitle";
+        
+        @media only screen and  (max-width : 576px) { height:$headerHeightSmall;  }
+   }
+  
+   @media only screen and  (max-width : 576px) { height:$headerHeightSmall;
+     .PaidforBy {
+          padding: .5rem 0rem 0 0;
+          font-size: .7rem;
+          img{ width: 100px; margin: 0 .5rem;}
+        }
+       }
+}

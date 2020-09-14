@@ -1,0 +1,48 @@
+.StandfirstContainer{
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    .Standfirst{
+        width: 100%;
+    }
+    .SPONSOR{
+        position: absolute;
+        right: -40%;
+        width: 40%;
+
+        display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    p{
+        font-family:$FontFamilyBody;
+        font-size: 12px;
+        margin: 0;
+    }
+    }
+
+    @media only screen and (max-width: 600px) {
+        .SPONSOR{
+            position: relative;
+            right: 0;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: flex-start;
+            align-content: flex-start;
+            padding: 1rem 0;
+        }
+    }
+}
+.BodyCopy{
+
+        font-size: 1rem;
+        a{
+            color: white;
+            font-weight: 800;
+        }
+    
+}
+

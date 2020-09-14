@@ -1,0 +1,20 @@
+.Section9{
+    padding: 10rem 0 ;
+    border-bottom: 5px solid black;
+
+
+    .Boxes{
+        border:1px solid red;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        align-content: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        .Box{
+            border:1px solid green;
+            padding: 4%;
+            width: 40%;
+        }
+    }
+}

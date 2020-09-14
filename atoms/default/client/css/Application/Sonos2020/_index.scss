@@ -1,0 +1,16 @@
+#Main{
+    
+    font-family: "Guardian Headline Full";
+    min-height: 100vh;
+    position: relative;
+    background-color: black;
+    color: white;
+    
+    @import "./IntroCopy";
+
+    .Sonos{
+        @import "./LoadingAudio";
+        @import "./AudioSectionBase";
+    
+    }
+}

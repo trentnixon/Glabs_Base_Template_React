@@ -1,0 +1,33 @@
+/************ 
+** Application Variables
+*************/
+
+// Import Application Elements
+
+$Path:"https://gdn-cdn.s3.amazonaws.com/embed/2019/06/westpac-scholars";
+$fonts:"/assets/fonts/";
+
+@mixin ParentIcons($Path, $icon, $color) {
+    background-color: $color; 
+    background-image: url($Path+"/assets/images/"+$icon);
+  }
+
+
+  @font-face {
+    font-display: swap;
+    font-family: "TS3 Text Sans";
+    src: url("#{$http+$fonts}TS3TextSans.woff2") format("woff2"),
+         url("#{$http+$fonts}TS3TextSans.woff") format("woff");
+  }
+
+  @font-face {
+    font-display: swap;
+    font-family: "TS3 Text Sans";
+    font-weight: bold;
+    src: url("#{$http+$fonts}TS3TextSans-Bold.woff2") format("woff2"),
+         url("#{$http+$fonts}TS3TextSans-Bold.woff") format("woff");
+  }
+
+
+@import "./_Colors.scss";
+@import "./Sonos2020/index"

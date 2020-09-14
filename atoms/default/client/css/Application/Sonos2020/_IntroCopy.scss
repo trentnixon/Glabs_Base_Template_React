@@ -1,0 +1,87 @@
+
+      .Sonos{
+             .introCopy{
+
+            padding: 3rem 22rem 5rem;
+            background-image: url('https://gdn-cdn.s3.amazonaws.com/embed/2020/08/Sonos2020/assets/images/OpenCopyBg.jpg');
+            background-size: contain;
+            background-position: center right;
+            background-repeat: no-repeat;
+            background-color: black;
+
+            p:nth-child(1){
+                font-size: 2rem;
+                line-height: 2.2rem;
+                font-family: "Guardian Headline Full";
+                font-weight: 800;
+                color: #2D8569;
+                margin:1rem 1rem 2rem;
+               
+                span{
+                 
+                    margin:0 3px;
+                    cursor: pointer;
+                    display: inline-flex;
+                    justify-content: center;
+                    align-items: center;
+                    align-content: center;
+                    padding-bottom: 4px;
+                    svg{
+                        width: 25px;
+                        margin: 0  0 0 7px;
+                    }
+                    border-bottom: 2px solid;
+                }
+            }
+
+            p{
+                font-family: $FontFamilyHeader;
+                margin: 1rem 2.5rem ;
+                color: white;
+            }
+        }
+    }
+    
+
+
+    @media only screen  and (min-width: 1200px) {
+        .Sonos{
+            .introCopy{
+                padding: 3rem 18rem ;
+                
+            }
+        }
+    }
+
+    @media only screen and (min-width: 1024px)  and (max-width: 1200px) {
+        .Sonos{
+            .introCopy{
+                padding: 3rem 15rem ;
+            }
+        }
+    }
+    @media only screen and (min-width: 768px)  and (max-width: 1024px) {
+        .Sonos{
+            .introCopy{
+                padding: 3rem 8rem ;
+            }
+        }
+    }
+    @media only screen and (min-width: 568px)  and (max-width: 768px) {
+        .Sonos{
+            .introCopy{
+                padding: 3rem 4rem ;
+            }
+        }
+    }
+    @media only screen and (max-width: 568px) {
+        .Sonos{
+           
+            .introCopy{
+                padding: 3rem 1rem ;
+                p:nth-child(1){ margin: 2rem 0;}
+                p{ margin: 1rem 0;}
+
+            }
+        }
+    }

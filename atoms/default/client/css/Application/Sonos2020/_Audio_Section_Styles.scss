@@ -1,0 +1,90 @@
+$Music:#d7a157;
+$Sport:#2D8569;
+$Podcast:#ffffff;
+$HoverColor:#ffffff;
+
+@mixin ProgressBarOuter($color) {  background-color: $color; }
+@mixin ProgressBarInner($color) {  background-color: $color; }
+@mixin TimecodeColor ($color){ color:$color;}
+
+.Music{
+    h1{ color: $Music;}
+    .controls{ 
+        border-color: $Music !important;
+        .ProgressBarOuter{
+            
+            @include ProgressBarOuter($Music );
+
+            width: 100%;
+            margin: 1rem;
+
+            .ProgressBar{
+                @include ProgressBarInner(#fff);
+            }
+        }
+        button{  
+            #PlayBtn,#PauseBtn,#BackwardBtn,#forwardBtn{fill:$Music;}
+        }
+        button:hover{
+            #PlayBtn,#PauseBtn,#BackwardBtn,#forwardBtn{fill:$HoverColor;}
+        }
+        .stop:hover{fill:$Music;}
+        .AudioTime{ strong{ @include TimecodeColor($Music);}}
+    }
+}
+
+
+.Sport{
+    .Audio{
+        justify-content: flex-end;
+        //flex-direction: row;
+        .Quotes div{
+            left: 2rem;
+        }
+    }
+    h1{ color: $Sport;}
+    .controls{ 
+        border-color: $Sport !important;
+        .ProgressBarOuter{
+            @include ProgressBarOuter($Sport );
+            width: 100%;
+            margin: 1rem;
+
+            .ProgressBar{
+                @include ProgressBarInner(#fff );
+            }
+        }
+        button{ 
+            #PlayBtn,#PauseBtn,#BackwardBtn,#forwardBtn{fill:$Sport;}
+        }
+        button:hover{
+            #PlayBtn,#PauseBtn,#BackwardBtn,#forwardBtn{fill:$HoverColor;}
+        }
+        .stop:hover{fill:$Sport;}
+        .AudioTime{ strong{ @include TimecodeColor($Sport);}}
+    }
+}
+
+.Podcast{
+    h1{ color: $Podcast;}
+    .controls{ 
+        border-color: $Podcast !important;
+        .ProgressBarOuter{
+            @include ProgressBarOuter(#313131 );
+            width: 100%;
+            margin: 1rem;
+
+            .ProgressBar{
+                @include ProgressBarInner($Podcast);
+            }
+        }
+        button{ 
+            #PlayBtn,#PauseBtn,#BackwardBtn,#forwardBtn{fill:$Podcast;}
+        }
+        button:hover{
+            #PlayBtn,#PauseBtn,#BackwardBtn,#forwardBtn{fill:$HoverColor;}
+        }
+        .stop:hover{fill:$Podcast;}
+        .AudioTime{ strong{ @include TimecodeColor($Podcast);}}
+    }
+}

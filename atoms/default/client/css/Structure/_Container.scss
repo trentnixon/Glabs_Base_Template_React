@@ -1,0 +1,20 @@
+.GlabsContainer{
+    @include FlexBoxBasic( $direction:column ,$justify:center,$items:center,$content:flex-start);
+   position: relative;
+    .ResponsiveContainer{
+        //
+        @include BreakPoints;
+
+        .inner{ 
+            // Variable Values based on Project
+            //@include InnerWidth();
+            //width:600px;
+            margin:  0 0 0 0%;
+            padding: 0 3rem;
+        }
+       
+    } 
+    .FullWidth{
+        width: 100vw;
+    }
+}
