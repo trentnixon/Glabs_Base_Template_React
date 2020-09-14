@@ -1,4 +1,4 @@
-# Glabs-Sonos-2020
+# Glabs_Base_Template_React
 
 Clone Repo
 
@@ -8,4 +8,4 @@ Start : Gulp
 
 Deploy : Gulp deploylive
 
-Composer URL : Gulp url# Glabs_Base_Template_React
+Composer URL : Gulp url
